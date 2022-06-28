@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#00BCD4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/pc"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="40dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/result"
+                android:gravity="center"
+                android:textSize="30dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+            <xyz.teamgravity.imageradiobutton.GravityRadioGroup
+                android:id="@+id/answer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <xyz.teamgravity.imageradiobutton.GravityImageRadioButton
+                    android:id="@+id/rock"
+                    android:tag="rock"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="20dp"
+                    app:girbImage="@drawable/rock"
+                    app:girbPressedTextColor="@color/white"
+                    app:girbText="rock"
+                    app:girbUnpressedTextColor="?attr/colorPrimary"
+                    android:clickable="true"/>
+
+
+                <xyz.teamgravity.imageradiobutton.GravityImageRadioButton
+                    android:id="@+id/paper"
+                    android:tag="paper"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="20dp"
+                    app:girbImage="@drawable/paper"
+                    app:girbPressedTextColor="@color/white"
+                    app:girbText="paper"
+                    app:girbUnpressedTextColor="?attr/colorPrimary" />
+
+
+
+                <xyz.teamgravity.imageradiobutton.GravityImageRadioButton
+                    android:id="@+id/scissors"
+                    android:tag="scissors"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="20dp"
+                    app:girbImage="@drawable/scissors"
+                    app:girbPressedTextColor="@color/white"
+                    app:girbText="scissors"
+                    app:girbUnpressedTextColor="?attr/colorPrimary" />
+
+            </xyz.teamgravity.imageradiobutton.GravityRadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                    <Button
+                    android:id="@+id/enter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="enter"
+                    android:textSize="25dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
